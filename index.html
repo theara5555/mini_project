@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ទំព័រដើម</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="relative flex items-center justify-between sm:h-10 py-6 px-4 bg-sky-600 sticky top-0"
+      >
+        <div class="container mx-auto flex items-center justify-between">
+          <!-- Logo Section -->
+          <div class="flex items-center">
+            <a href="index.html" aria-label="Home">
+              <img src="image/logo.png" class="max-h-10 max-w-full" />
+            </a>
+          </div>
+          <!-- Navigation Links -->
+          <div class="flex-1 flex justify-center">
+            <div class="flex space-x-[70px]">
+              <a
+                href="html/hospital.html"
+                class="text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white​​"
+                >មន្ទីរពេទ្យ</a
+              >
+              <a
+                href="html/news.html"
+                class="koh-santepheap-regular text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white"
+                >ព័ត៌មាន</a
+              >
+              <a
+                href="html/contactus.html"
+                class="text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white"
+                >ទំនាក់ទំនង</a
+              >
+              <a
+                href="html/aboutus.html"
+                target="_blank"
+                class="koh-santepheap-regular text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white"
+                >អំពីយើង</a
+              >
+            </div>
+          </div>
+          <!-- Button Section -->
+          <div class="flex items-center space-x-2">
+            <a
+              href="/signup"
+              class="koh-santepheap-thin inline-flex items-center px-6 py-1 border border-black text-black leading-6 font-medium rounded-md text-black bg-gray-50 hover:bg-gray-200 focus:outline-none focus:border-blue-700 transition duration-150 ease-in-out width-150"
+            >
+              បង្កើតគណនី
+            </a>
+            <a
+              href="/signin"
+              class="koh-santepheap-thin inline-flex items-center px-6 py-1 border border-black text-black leading-6 font-medium rounded-md text-black bg-gray-50 hover:bg-gray-200 focus:outline-none focus:border-blue-700 transition duration-150 ease-in-out width-150"
+            >
+              ចូលគណនី
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <!-- Cover -->
+        <div
+          class="relative min-h-screen flex flex-col items-start justify-center px-4"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.7)
+              ),
+              url('image/coverhomepage.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+          "
+        >
+          <div class="background-overlay"></div>
+          <div class="text-overlay">
+            <h3 class="text-4xl md:text-5xl text-white font-bold mb-4">
+              សុខភាពគឺពិតជា
+            </h3>
+            <h3 class="text-3xl md:text-4xl text-red-500 font-bold mb-4">
+              មានសារៈសំខាន់ណាស់សម្រាប់ជីវិត
+            </h3>
+            <p class="text-white text-lg md:text-xl">
+              ភ្ជាប់អ្នកទៅកាន់មន្ទីរពេទ្យដែលមានចំណាត់ថ្នាក់កំពូល
+              ដោយផ្តល់ឱ្យអ្នកនូវការចូលប្រើព័ត៌មានសំខាន់ៗដូចជា
+              សេវាកម្មដែលបានផ្តល់ជូន ការពិនិត្យអ្នកជំងឺ
+              និងព័ត៌មានលម្អិតអំពីទីតាំង។ ជាមួយនឹងវេទិកាដែលងាយស្រួលប្រើរបស់យើង
+              ការស្វែងរកមន្ទីរពេទ្យត្រឹមត្រូវមិនងាយស្រួលទេ»។
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- Card Hospital -->
+        <div
+          class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full px-4 flex flex-wrap justify-center items-center space-x-4"
+        >
+          <div
+            data-aos="zoom-in-right"
+            class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 aos-init aos-animate"
+          >
+            <img
+              src="image/general.jpg"
+              alt="Image 1"
+              class="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+          <div
+            data-aos="zoom-in"
+            class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 aos-init aos-animate"
+          >
+            <img
+              src="image/young.jpg"
+              alt="Image 2"
+              class="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+          <div
+            data-aos="zoom-in-left"
+            class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 aos-init aos-animate"
+          >
+            <img
+              src="image/older.jpg"
+              alt="Image 3"
+              class="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+          <div
+            data-aos="zoom-in-left"
+            class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 aos-init aos-animate"
+          >
+            <img
+              src="image/woman.jpg"
+              alt="Image 4"
+              class="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+      <section
+        class="flex flex-col items-center text-center pt-5 aos-init grid grid-cols-12 mx-auto"
+        style="margin: 120px"
+      >
+        <div class="col-span-12">
+          <!-- Welcome -->
+          <h2 class="text-2xl font-bold mb-4">
+            សូមស្វាគមន៍មកកាន់គេហទំព័ររបស់ពួកយើង
+          </h2>
+          <h2 class="text-2xl font-bold mb-4">
+            គឺជាគេហទំព័រដែលល្អបំផុតក្នុងការស្វែងរកមន្ទីរពេទ្យ
+          </h2>
+          <p class="text-lg">
+            "ស្វែងរកមន្ទីរពេទ្យល្អបំផុតនៅជិតអ្នកជាមួយ។
+            វេទិការបស់យើងធ្វើឱ្យវាងាយស្រួលក្នុងការស្វែងរក ប្រៀបធៀប
+            និងជ្រើសរើសអ្នកផ្តល់សេវាថែទាំសុខភាពដែលត្រឹមត្រូវតាមតម្រូវការរបស់អ្នក។
+            មិនថាសម្រាប់ការថែទាំបន្ទាន់ ឬការព្យាបាលឯកទេសទេ
+            ស្វែងរកមន្ទីរពេទ្យដ៏ល្អឥតខ្ចោះបានយ៉ាងឆាប់រហ័ស
+            និងប្រកបដោយទំនុកចិត្តដោយគ្រាន់តែ ចុចពីរបី។"
+          </p>
+        </div>
+      </section>
+      <section>
+        <!-- Service -->
+        <h2 class="text-2xl font-bold mb-20 text-center">
+          សូមស្វាគមន៍មកកាន់គេហទំព័ររបស់ពួកយើង
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-screen-xl mx-auto"
+          style="margin: 0 120px"
+        >
+          <div
+            class="max-w-sm p-6 bg-blue border rounded-lg shadow dark:border-black"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40px"
+              height="40px"
+              color="darkblue"
+              viewBox="0 0 256 256"
+            >
+              <path
+                fill="currentColor"
+                d="M146.2 46.45a6 6 0 0 1 7.35-4.25a84.24 84.24 0 0 1 60.25 60.25a6 6 0 0 1-4.25 7.35a6 6 0 0 1-1.55.2a6 6 0 0 1-5.8-4.45a72.34 72.34 0 0 0-51.75-51.75a6 6 0 0 1-4.25-7.35m-3.75 39.35C157 89.68 166.32 99 170.2 113.55A6 6 0 0 0 176 118a6 6 0 0 0 1.55-.2a6 6 0 0 0 4.25-7.35c-5-18.71-17.54-31.25-36.25-36.25a6 6 0 1 0-3.1 11.6m79.44 97A54.25 54.25 0 0 1 168 230C89.7 230 26 166.3 26 88a54.25 54.25 0 0 1 47.17-53.89a14 14 0 0 1 14.56 8.39l21.1 47.1a14 14 0 0 1-1.12 13.28a6 6 0 0 1-.42.57l-21.07 25.06a1.89 1.89 0 0 0 0 1.67c7.66 15.68 24.1 32 40 39.65a1.88 1.88 0 0 0 1.68-.06l24.69-21a5 5 0 0 1 .56-.42a14 14 0 0 1 13.28-1.22l47.24 21.17a14 14 0 0 1 8.22 14.53ZM210 181.32a2 2 0 0 0-1.21-2l-47.25-21.17a1.92 1.92 0 0 0-1.6.1l-24.68 21c-.18.15-.37.29-.56.42a14 14 0 0 1-13.77 1c-18.36-8.87-36.66-27-45.53-45.19a14 14 0 0 1 .91-13.73a5 5 0 0 1 .43-.57l21.05-25.09a2 2 0 0 0 0-1.67L76.74 47.31A2 2 0 0 0 74.9 46h-.23A42.24 42.24 0 0 0 38 88c0 71.68 58.32 130 130 130a42.24 42.24 0 0 0 42-36.68"
+              />
+            </svg>
+            <h5
+              class="mb-4 mt-4 text-2xl font-semibold tracking-tight text-gray-900 dark:text-blue-700"
+            >
+              លេខទូរស័ព្ទ
+            </h5>
+            <p class="mb-4 font-normal text-blue-700 dark:text-blue-700">
+              អ្នកអាចទទួលបានទូរស័ព្ទរបស់មន្ទីរពេទ្យដែលអ្នកចង់ភ្ជាប់។
+            </p>
+          </div>
+          <div
+            class="max-w-sm p-6 bg-blue border rounded-lg shadow dark:border-black"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40px"
+              height="40px"
+              color="darkblue"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path
+                  d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                />
+                <circle cx="12" cy="10" r="3" />
+              </g>
+            </svg>
+            <h5
+              class="mb-2 mt-4 text-2xl font-semibold tracking-tight text-blue-700 dark:text-blue-700"
+            >
+              ​ទីតាំង
+            </h5>
+            <p class="mb-3 font-normal text-blue-700 dark:text-blue-700">
+              អ្នកអាចទទួលបានទីតាំងរបស់មន្ទីរពេទ្យដែលអ្នកចង់ភ្ជាប់។
+            </p>
+          </div>
+          <div
+            class="max-w-sm p-6 bg-blue border rounded-lg shadow dark:border-black"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40px"
+              height="40px"
+              color="darkblue"
+              viewBox="0 0 1024 1024"
+            >
+              <path
+                fill="currentColor"
+                d="M128 224v512a64 64 0 0 0 64 64h640a64 64 0 0 0 64-64V224zm0-64h768a64 64 0 0 1 64 64v512a128 128 0 0 1-128 128H192A128 128 0 0 1 64 736V224a64 64 0 0 1 64-64"
+              />
+              <path
+                fill="currentColor"
+                d="M904 224L656.512 506.88a192 192 0 0 1-289.024 0L120 224zm-698.944 0l210.56 240.704a128 128 0 0 0 192.704 0L818.944 224z"
+              />
+            </svg>
+            <h5
+              class="mb-2 mt-4 text-2xl font-semibold tracking-tight text-blue-700 dark:text-blue-700"
+            >
+              ប្រអប់សារ
+            </h5>
+            <p class="mb-3 font-normal text-blue-700 dark:text-blue-700">
+              អ្នកអាចផ្ញើរសារទៅមន្ទីរពេទ្យដែលអ្នកចង់ភ្ជាប់។
+            </p>
+          </div>
+          <div
+            class="max-w-sm p-6 bg-blue border rounded-lg shadow dark:border-black"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40px"
+              height="40px"
+              color="darkblue"
+              viewBox="0 0 24 24"
+            >
+              <g fill="none">
+                <path
+                  d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 2a1 1 0 0 1 .993.883L13 7v4.586l2.707 2.707a1 1 0 0 1-1.32 1.497l-.094-.083l-3-3a1 1 0 0 1-.284-.576L11 12V7a1 1 0 0 1 1-1"
+                />
+              </g>
+            </svg>
+            <h5
+              class="mb-2 mt-4 text-2xl font-semibold tracking-tight text-blue-700 dark:text-blue-700"
+            >
+              ម៉ោងធ្វើការ
+            </h5>
+            <p class="mb-3 font-normal text-blue-700 dark:text-blue-700">
+              អ្នកអាចទទួលបាននូវម៉ោងធ្វើការរបស់មន្ទីរពេទ្យដែលអ្នកចង់ភ្ជាប់។
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- Why choose us -->
+        <h2 class="text-2xl font-bold mb- text-center mt-20">
+          សូមស្វាគមន៍មកកាន់គេហទំព័ររបស់ពួកយើង
+        </h2>
+        <!-- Cards Row -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-screen-xl mx-auto"
+          style="margin: 0 120px"
+        >
+          <!-- Card 1 -->
+          <div
+            class="max-w-sm p-6 bg-white text-black rounded-lg mt-10 mb-10​ ​border-black"
+          >
+            <div class="flex pt-2 pb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40px"
+                height="40px"
+                color="black"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3"
+                />
+                <!-- SVG content -->
+              </svg>
+              <h5
+                class="text-2xl font-semibold tracking-tight text-black-900 dark:text-black"
+              >
+                ម៉ោងធ្វើការ
+              </h5>
+            </div>
+            <p class="mb-3 font-normal text-black dark:text-black">
+              អ្នកអាចទទួលបាននូវម៉ោងធ្វើការរបស់មន្ទីរពេទ្យដែលអ្នកចង់ភ្ជាប់។
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="max-w-sm p-6 bg-white text-black rounded-lg mt-10 border-black"
+          >
+            <div class="flex pt-2 pb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40px"
+                height="40px"
+                color="black"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M20 17q.86 0 1.45.6t.58 1.4L14 22l-7-2v-9h1.95l7.27 2.69q.78.31.78 1.12q0 .47-.34.82t-.86.37H13l-1.75-.67l-.33.94L13 17zM16 3.23Q17.06 2 18.7 2q1.36 0 2.3 1t1 2.3q0 1.03-1 2.46t-1.97 2.39T16 13q-2.08-1.89-3.06-2.85t-1.97-2.39T10 5.3q0-1.36.97-2.3t2.34-1q1.6 0 2.69 1.23M.984 11H5v11H.984z"
+                />
+                <!-- SVG content -->
+              </svg>
+              <h5
+                class="text-2xl font-semibold tracking-tight text-black-900 dark:text-black"
+              >
+                តម្រូវការ
+              </h5>
+            </div>
+            <p class="mb-3 font-normal text-black dark:text-black">
+              ​ត្រូវ​បាន​បង្កើត​ឡើង​ដើម្បី​បំពេញ​តាម​តម្រូវការ​របស់​អ្នក​ប្រើ​ប្រាស់​
+              មិន​ថា​ហិរញ្ញវត្ថុ​ ការ​ទុក​ចិត្ត​ ពេលវេលា​
+              ឬ​ព័ត៌មាន​ពី​មន្ទីរពេទ្យ។
+            </p>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="max-w-sm p-6 bg-white text-black rounded-lg mt-10 border-black"
+          >
+            <div class="flex pt-2 pb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40px"
+                height="40px"
+                color="black"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16m1-8h4v2h-6V7h2z"
+                />
+                <!-- SVG content -->
+              </svg>
+              <h5
+                class="text-2xl font-semibold tracking-tight text-black-900 dark:text-black"
+              >
+                ពេលវេលា
+              </h5>
+            </div>
+            <p class="mb-3 font-normal text-black dark:text-black">
+              យើងពិចារណាយ៉ាងពេញលេញអ្នកប្រើប្រាស់
+              និងពេលវេលារបស់ពួកគេដើម្បីបង្កើនភាពងាយស្រួលនៃការប្រើប្រាស់។
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- Feedback -->
+        <h2 class="text-2xl font-bold mb-4 text-center mt-20">
+          មតិពីអ្នកប្រើប្រាស់គេហទំព័ររបស់យើង
+        </h2>
+        <!-- Cards Row -->
+        <div
+          class="grid grid-cols-12 gap-4 max-w-screen-xl mx-auto"
+          style="margin: 0 120px"
+        >
+          <!-- Card 1 -->
+          <div
+            class="col-span-12 sm:col-span-6 p-6 bg-white text-black rounded-lg mt-10 border border-gray-300"
+          >
+            <div class="flex items-center pt-2 pb-2">
+              <img
+                id="profile"
+                src="image/fb48f2dd95c5b9031af3020f4bbb2443.jpg"
+                alt="profile"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <h5
+                class="text-2xl font-semibold tracking-tight text-black-900 dark:text-black"
+              >
+                Jennie Kim
+              </h5>
+            </div>
+            <p class="mb-3 font-normal text-black dark:text-black">
+              I really like this website. It's easy to find hospitals and get
+              true information.
+            </p>
+            <img
+              id="star"
+              src="image/star.png"
+              alt="star"
+              class="w-20 h-auto"
+            />
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="col-span-12 sm:col-span-6 p-6 bg-white text-black rounded-lg mt-10 border border-gray-300"
+          >
+            <div class="flex items-center pt-2 pb-2">
+              <img
+                id="profile"
+                src="image/234b9ee3d4e06c991c5f1b18fdc20bde.jpg"
+                alt="profile"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <h5
+                class="text-2xl font-semibold tracking-tight text-black-900 dark:text-black"
+              >
+                Theara Chim
+              </h5>
+            </div>
+            <p class="mb-3 font-normal text-black dark:text-black">
+              The best website.
+            </p>
+            <img
+              id="star"
+              src="image/star.png"
+              alt="star"
+              class="w-20 h-auto"
+            />
+          </div>
+        </div>
+      </section>
+      <section
+        class="flex flex-col items-center text-center pt-5 aos-init grid grid-cols-12 mx-auto"
+        style="margin: 120px"
+      >
+        <div class="col-span-12">
+          <!-- Thank you -->
+          <h2 class="text-2xl font-bold mb-4">សូមអរគុណសម្រាប់ការប្រើប្រាស់!</h2>
+          <p class="text-lg">
+            យើងរីករាយដែលអ្នកបានជ្រើសរើសប្រើប្រាស់គេហទំព័ររបស់យើង។ ការគាំទ្រ
+            និងការជឿទុកចិត្តរបស់អ្នកមានន័យថាពិភពលោកសម្រាប់ពួកយើង។
+            ប្រសិនបើអ្នកមានមតិកែលម្អ សំណួរ ឬការផ្ដល់យោបល់ណាមួយ
+            សូមកុំស្ទាក់ស្ទើរក្នុងការទាក់ទង។
+            យើងតែងតែនៅទីនេះដើម្បីបង្កើនបទពិសោធន៍របស់អ្នក!
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer style="background-image: url(image/cover.jpg)">
+      <div class="bg-white dark:bg-black">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+          <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+              <a href="https://flowbite.com/" class="flex items-center">
+                <img
+                  src="https://flowbite.com/docs/images/logo.svg"
+                  class="h-8 me-3"
+                  alt="FlowBite Logo"
+                />
+                <span
+                  class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+                  >Flowbite</span
+                >
+              </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                <h2
+                  class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+                >
+                  Resources
+                </h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                    <a href="https://flowbite.com/" class="hover:underline"
+                      >Flowbite</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://tailwindcss.com/" class="hover:underline"
+                      >Tailwind CSS</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2
+                  class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+                >
+                  Follow us
+                </h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                    <a
+                      href="https://github.com/themesberg/flowbite"
+                      class="hover:underline"
+                      >Github</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://discord.gg/4eeurUVvTy"
+                      class="hover:underline"
+                      >Discord</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2
+                  class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+                >
+                  Legal
+                </h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:underline"
+                      >Terms &amp; Conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+          />
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <span
+              class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+              >© 2023
+              <a href="https://flowbite.com/" class="hover:underline"
+                >Flowbite™</a
+              >. All Rights Reserved.
+            </span>
+            <div class="flex mt-4 sm:justify-center sm:mt-0">
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 8 19"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Facebook page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 21 16"
+                >
+                  <path
+                    d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                  />
+                </svg>
+                <span class="sr-only">Discord community</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 17"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Twitter page</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">GitHub account</span>
+              </a>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              >
+                <svg
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Dribbble account</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

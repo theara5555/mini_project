@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>មន្ទីរពេទ្យ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="relative flex items-center justify-between sm:h-10 py-6 px-4 bg-sky-600 sticky top-0"
+      >
+        <div class="container mx-auto flex items-center justify-between">
+          <!-- Logo Section -->
+          <div class="flex items-center">
+            <a href="../index.html" aria-label="Home">
+              <img src="../image/logo.png" class="max-h-10 max-w-full" />
+            </a>
+          </div>
+          <!-- Navigation Links -->
+          <div class="flex-1 flex justify-center">
+            <div class="flex space-x-[70px]">
+              <a
+                href="../html/hospital.html"
+                class="koh-santepheap-regular text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white​​"
+                >មន្ទីរពេទ្យ</a
+              >
+              <a
+                href="../html/news.html"
+                class="koh-santepheap-regular text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white"
+                >ព័ត៌មាន</a
+              >
+              <a
+                href="../html/contactus.html"
+                class="koh-santepheap-regular text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white"
+                >ទំនាក់ទំនង</a
+              >
+              <a
+                href="../html/aboutus.html"
+                target="_blank"
+                class="koh-santepheap-regular text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white"
+                >អំពីយើង</a
+              >
+            </div>
+          </div>
+          <!-- Button Section -->
+          <div class="flex items-center space-x-2">
+            <a
+              href="/signup"
+              class="koh-santepheap-thin inline-flex items-center px-6 py-1 border border-black text-black leading-6 font-medium rounded-md text-black bg-gray-50 hover:bg-gray-200 focus:outline-none focus:border-blue-700 transition duration-150 ease-in-out width-150"
+            >
+              បង្កើតគណនី
+            </a>
+            <a
+              href="/signin"
+              class="koh-santepheap-thin inline-flex items-center px-6 py-1 border border-black text-black leading-6 font-medium rounded-md text-black bg-gray-50 hover:bg-gray-200 focus:outline-none focus:border-blue-700 transition duration-150 ease-in-out width-150"
+            >
+              ចូលគណនី
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <!-- Cover -->
+        <div
+          class="relative min-h-screen flex flex-col items-start justify-center px-4"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.7)
+              ),
+              url('../image/phnompenhguide1.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+          "
+        >
+          <div class="background-overlay"></div>
+          <div class="text-overlay">
+            <h2 class="text-4xl md:text-5xl text-white font-bold mb-4">
+              "ស្វែងរកមន្ទីរពេទ្យជាប់នឹងអ្នក
+            </h2>
+            <h2 class="text-3xl md:text-4xl text-red-500 font-bold mb-4">
+              ទទួលបានព័ត៌មានច្បាស់លាស់និងងាយស្រួល"
+            </h2>
+            <p class="text-white text-lg md:text-xl">
+              គេហទំព័រនេះត្រូវបានរចនាឡើងដើម្បីផ្តល់នូវបទពិសោធន៍ប្រើប្រាស់យ៉ាងឆ្លាតវៃសម្រាប់អ្នកស្វែងរកមន្ទីរពេទ្យនៅកម្ពុជា។ ព័ត៌មានត្រូវបានរៀបចាត់តាមប្រភេទដូចជាទីតាំង
+              ឯកទេស
+              និងសេវាកម្មមន្ទីរពេទ្យ។ អត្ថបទនៅលើគេហទំព័រនេះត្រូវបានសរសេរដោយប្រើភាសាត្រឹមត្រូវ
+              ធ្វើឱ្យការយល់ដឹងកាន់តែងាយស្រួល។ មានផែនទីអន្តរកម្មដែលអនុញ្ញាតឱ្យអ្នកស្វែងរកមន្ទីរពេទ្យនៅទីតាំងជាក់លាក់បានយ៉ាងឆាប់រហ័ស។ ផែនទីអន្តរកម្មនេះអាចបង្ហាញទីតាំងនៃមន្ទីរពេទ្យ
+              បន្ថែមទាំងផ្ដល់ព័ត៌មានលម្អិតផ្សេងៗ។ ការស្វែងរកមន្ទីរពេទ្យក្លាយជារឿងសាមញ្ញ
+              និងងាយស្រួលសម្រាប់អ្នកប្រើប្រាស់គ្រប់គ្នា។ ព័ត៌មានទាំងអស់នៅលើគេហទំព័រនេះត្រូវបានធ្វើបច្ចុប្បន្នភាពជាប្រចាំ។ នេះធានាថាអ្នកប្រើប្រាស់ទទួលបានព័ត៌មានថ្មីៗ
+              និងត្រឹមត្រូវមុនពេលទៅមន្ទីរពេទ្យ។ ការរចនាគេហទំព័រនេះគឺផ្តោតលើការផ្ដល់បទពិសោធន៍ប្រើប្រាស់ដែលរលូន
+              និងប្រសើរ។ គេហទំព័រនេះគឺជាឧបករណ៍មួយដែលអាចជួយអ្នកស្វែងរកមន្ទីរពេទ្យដែលត្រូវការយ៉ាងឆាប់រហ័ស។
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="text-center mt-20 mb-20">
+        <!-- Let's start -->
+        <h2>មន្ទីរពេទ្យនៅក្នុងទីក្រុងភ្នំពេញ</h2>
+        <p>តោះស្វែងរកមន្ទីរពេទ្យដែលល្អៗជាមួយនឹងគេហទំព័ររបស់ពួកយើង</p>
+      </section>
+      <section>
+        <!-- Publice Hospital -->
+        <h2>មន្ទីរពេទ្យសាធារណៈ</h2>
+        <!-- Slide -->
+        <div class="container">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="../image/general.jpg" alt="general hospital" />
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">$20</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">Special Pizza</h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="../image/young.jpg" alt="young" />
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">$20</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">Meat Ball</h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="../image/older.jpg" alt="older" />
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">$40</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">Burger</h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="../image/woman.jpg" alt="woman" />
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">$15</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">Frish Curry</h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="../image/icu.jpg" alt="icu" />
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">$15</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">Pane Cake</h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="../image/takecare.jpg" alt="Tranding" />
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">$20</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">Vanilla cake</h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                  <img src="../image/take.jpg" alt="Tranding" />
+                </div>
+                <div class="tranding-slide-content">
+                  <h1 class="food-price">$8</h1>
+                  <div class="tranding-slide-content-bottom">
+                    <h2 class="food-name">Straw Cake</h2>
+                    <h3 class="food-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+            </div>
+
+            <div class="tranding-slider-control">
+              <div class="swiper-button-prev slider-arrow">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+              </div>
+              <div class="swiper-button-next slider-arrow">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- Card of Publice hospital -->
+        <h2>មន្ទីរពេទ្យទូទៅ</h2>
+        <div class="px-4 lg:px-32 mt-10">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Card 1 -->
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 mx-auto"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg w-full h-48 object-cover"
+                  src="../image/kallamet.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                  <h3
+                    class="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
+                  >
+                    មន្ទីរពេទ្យកាលម៉ែត
+                  </h3>
+                </a>
+                <p
+                  class="mb-3 text-sm sm:text-base font-normal text-gray-700 dark:text-gray-400"
+                >
+                  Here are the biggest enterprise technology acquisitions of
+                  2021 so far, in reverse chronological order.
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Read more
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 mx-auto"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg w-full h-48 object-cover"
+                  src="../image/china_cambodia.jpeg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                  <h3
+                    class="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
+                  >
+                    Another tech acquisition in 2021
+                  </h3>
+                </a>
+                <p
+                  class="mb-3 text-sm sm:text-base font-normal text-gray-700 dark:text-gray-400"
+                >
+                  This acquisition has impacted the industry in several ways,
+                  including...
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Read more
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 mx-auto"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg w-full h-48 object-cover"
+                  src="../image/rosi.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                  <h3
+                    class="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Major tech deal announced
+                  </h3>
+                </a>
+                <p
+                  class="mb-3 text-sm sm:text-base font-normal text-gray-700 dark:text-gray-400"
+                >
+                  The deal is expected to close by the end of the year and
+                  will...
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Read more
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div
+              class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 mx-auto"
+            >
+              <a href="#">
+                <img
+                  class="rounded-t-lg w-full h-48 object-cover"
+                  src="../image/rosi.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="#">
+                  <h3
+                    class="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Major tech deal announced
+                  </h3>
+                </a>
+                <p
+                  class="mb-3 text-sm sm:text-base font-normal text-gray-700 dark:text-gray-400"
+                >
+                  The deal is expected to close by the end of the year and
+                  will...
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Read more
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
