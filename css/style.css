@@ -1,10 +1,11 @@
-html, body, main {
+html,
+body,
+main {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: white;
-
 }
 
 #carousel {
@@ -22,9 +23,9 @@ html, body, main {
 #carousel div img {
   width: 400px;
   transition: width 400ms;
-   -webkit-user-drag: none;
-   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-   border-radius: 10px;
+  -webkit-user-drag: none;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 10px;
 }
 #carousel div.hideLeft {
   left: 0%;
@@ -96,10 +97,7 @@ html, body, main {
 
 .button-82-pushable:hover .button-82-front {
   transform: translateY(-6px);
-  transition:
-    transform
-    250ms
-    cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
 
 .button-82-pushable:active .button-82-front {
@@ -109,10 +107,7 @@ html, body, main {
 
 .button-82-pushable:hover .button-82-shadow {
   transform: translateY(4px);
-  transition:
-    transform
-    250ms
-    cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
 
 .button-82-pushable:active .button-82-shadow {
@@ -122,4 +117,78 @@ html, body, main {
 
 .button-82-pushable:focus:not(:focus-visible) {
   outline: none;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+.transition-transform {
+  transition: transform 0.2s ease-in-out;
+}
+.transition-transform:hover {
+  transform: scale(1.05);
+}
+.transition-border {
+  transition: border-color 0.2s ease-in-out;
+}
+.transition-border:focus {
+  border-color: #0284c7;
+}
+
+@font-face {
+  font-family: "Tiatle";
+  src: url("../font/KohSantepheap-Bold.ttf");
+}
+
+@font-face {
+  font-family: "text";
+  src: url("../font/KohSantepheap-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Button";
+  src: url("../font/KohSantepheap-Light.ttf");
+}
+@font-face {
+  font-family: "caption";
+  src: url("../font/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: "taitle";
+  src: url("../font/Roboto-Light.ttf");
+}
+h1,
+h2,
+h3 {
+  /* Apply the "Tiatle" font to headings */
+  font-family: "Tiatle", sans-serif;
+}
+
+p,
+span,
+div {
+  /* Apply the "text" font to paragraphs, spans, and divs */
+  font-family: "text", sans-serif;
+}
+
+button {
+  /* Apply the "Button" font to buttons */
+  font-family: "Button", sans-serif;
+  color: #000;
+}
+a {
+  /* Apply the "Button" font to buttons */
+  font-family: "Button", sans-serif;
+}
+.bg-primary {
+  background-color: #0190cd;
 }
