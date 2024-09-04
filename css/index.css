@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Tiatle";
   src: url("../font/KohSantepheap-Bold.ttf");
@@ -21,19 +20,27 @@
   font-family: "taitle";
   src: url("../font/Roboto-Light.ttf");
 }
-h1, h2, h3 { /* Apply the "Tiatle" font to headings */
+h1,
+h2,
+h3 {
+  /* Apply the "Tiatle" font to headings */
   font-family: "Tiatle", sans-serif;
 }
 
-p, span, div { /* Apply the "text" font to paragraphs, spans, and divs */
+p,
+span,
+div {
+  /* Apply the "text" font to paragraphs, spans, and divs */
   font-family: "text", sans-serif;
 }
 
-button { /* Apply the "Button" font to buttons */
+button {
+  /* Apply the "Button" font to buttons */
   font-family: "Button", sans-serif;
   color: #000;
 }
-a { /* Apply the "Button" font to buttons */
+a {
+  /* Apply the "Button" font to buttons */
   font-family: "Button", sans-serif;
 }
 .bg-primary {
@@ -77,8 +84,8 @@ a { /* Apply the "Button" font to buttons */
   animation: push-up 0.3s ease-in-out forwards;
 }
 .px-3 {
-  padding-left: .75rem;
-  padding-right: .75rem
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-4 {
@@ -104,4 +111,3 @@ a { /* Apply the "Button" font to buttons */
     font-size: 1.25rem; /* Adjust paragraph size on medium screens */
   }
 }
-
