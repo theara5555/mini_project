@@ -15,14 +15,123 @@
       href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="../css/aboutus.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-      <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-      <path
-        d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"
-      />
-    </svg>
+    <header>
+      <section>
+        <!-- Navbar -->
+        <nav
+          class="relative flex items-center justify-between sm:h-10 py-6 px-4 bg-sky-600 sticky top-0"
+        >
+          <div class="container mx-auto flex items-center justify-between">
+            <!-- Logo Section -->
+            <div class="flex items-center">
+              <a href="../index.html" aria-label="Home">
+                <img src="../image/logo.png" class="max-h-10 max-w-full" />
+              </a>
+            </div>
+            <!-- Navigation Links -->
+            <div class="flex-1 flex justify-center">
+              <div class="flex space-x-[70px]">
+                <a
+                  href="../html/hospital.html"
+                  class="koh-santepheap-regular text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white​​"
+                  >មន្ទីរពេទ្យ</a
+                >
+                <a
+                  href="../html/news.html"
+                  class="koh-santepheap-regular text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white"
+                  >ព័ត៌មាន</a
+                >
+                <a
+                  href="../html/contactus.html"
+                  class="koh-santepheap-regular text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white"
+                  >ទំនាក់ទំនង</a
+                >
+                <a
+                  href="../html/aboutus.html"
+                  target="_blank"
+                  class="koh-santepheap-regular text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white"
+                  >អំពីយើង</a
+                >
+              </div>
+            </div>
+            <!-- Button Section -->
+            <div class="flex items-center space-x-2">
+              <a
+                href="/signup"
+                class="koh-santepheap-thin inline-flex items-center px-6 py-1 border border-black text-black leading-6 font-medium rounded-md text-black bg-gray-50 hover:bg-gray-200 focus:outline-none focus:border-blue-700 transition duration-150 ease-in-out width-150"
+              >
+                បង្កើតគណនី
+              </a>
+              <a
+                href="/signin"
+                class="koh-santepheap-thin inline-flex items-center px-6 py-1 border border-black text-black leading-6 font-medium rounded-md text-black bg-gray-50 hover:bg-gray-200 focus:outline-none focus:border-blue-700 transition duration-150 ease-in-out width-150"
+              >
+                ចូលគណនី
+              </a>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section>
+        <!-- Cover -->
+        <div
+          class="relative min-h-screen flex flex-col items-start justify-center px-4"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.7)
+              ),
+              url('../image/treatment-4099432_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+          "
+        >
+          <div class="background-overlay"></div>
+          <div class="text-overlay text-center">
+            <h2 class="text-3xl md:text-4xl text-red-500 font-bold mb-4">
+              អំពីយើង
+            </h2>
+            <p class="text-white text-lg md:text-xl text-center">
+              សូមស្វាគមន៍មកកាន់ Hospital Finding Hospital Finding,
+              គោលបំណងរបស់យើងគឺធ្វើឲ្យការស្វែងរកមន្ទីរពេទ្យដែលមានគុណភាពកាន់តែងាយស្រួលនិងមានប្រសិទ្ធភាព។
+              ជាអ្នកបង្កើតតែម្នាក់ឯងនៃវេបសាយនេះ
+              ខ្ញុំត្រៀមខ្លួនជាអ្នកធានាថាអ្នកអាចចូលដល់ព័ត៌មានត្រឹមត្រូវនិងទូលំទូលាយអំពីមន្ទីរពេទ្យ។
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2
+        class="text-3xl md:text-4xl font-bold mb-4"
+          style="font-family: taitle"
+        >
+          Hospital Finding
+        </h2>
+        <h3 class="text-xl font-bold mb-4">ចក្ខុវិស័យរបស់ខ្ញុំ</h3>
+        <p class="text-white text-lg md:text-xl"​ style="font-family:caption ;">
+          ចក្ខុវិស័យរបស់ខ្ញុំគឺផ្តល់ឲ្យអ្នកនូវធនធានមានតម្លៃ
+          ដែលអាចជួយអ្នកក្នុងការស្វែងរកព័ត៌មានលម្អិតអំពីមន្ទីរពេទ្យនិងសេវាកម្មរបស់ពួកគេ។
+          ខ្ញុំបានប្តេជ្ញាថានឹងជួយអ្នកក្នុងការធ្វើការសម្រេចចិត្តអំពីសុខភាពរបស់អ្នក
+          ដោយផ្តល់ឲ្យអ្នកនូវវេបសាយដែលមានភាពងាយស្រួលនិងត្រឹមត្រូវ។
+        </p>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>

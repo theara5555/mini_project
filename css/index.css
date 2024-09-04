@@ -13,6 +13,14 @@
   font-family: "Button";
   src: url("../font/KohSantepheap-Light.ttf");
 }
+@font-face {
+  font-family: "caption";
+  src: url("../font/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: "taitle";
+  src: url("../font/Roboto-Light.ttf");
+}
 h1, h2, h3 { /* Apply the "Tiatle" font to headings */
   font-family: "Tiatle", sans-serif;
 }
@@ -76,11 +84,4 @@ a { /* Apply the "Button" font to buttons */
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-#star {
-  border-radius: 50%;
-  border: 2px solid #000;
-  width: 5px;
-  height: 5px;
-  object-fit: cover;
 }

@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: "Tiatle";
+    src: url("../font/KohSantepheap-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "text";
+    src: url("../font/KohSantepheap-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "Button";
+    src: url("../font/KohSantepheap-Light.ttf");
+  }
+  @font-face {
+    font-family: "caption";
+    src: url("../font/Roboto-Thin.ttf");
+  }
+  @font-face {
+    font-family: "taitle";
+    src: url("../font/Roboto-Light.ttf");
+  }
+  h1, h2,h3 { /* Apply the "Tiatle" font to headings */
+    font-family: "Tiatle", sans-serif;
+  }
+  
+  p, span, div { /* Apply the "text" font to paragraphs, spans, and divs */
+    font-family: "text", sans-serif;
+  }
+  
+  button { /* Apply the "Button" font to buttons */
+    font-family: "Button", sans-serif;
+    color: #000;
+  }
+  a { /* Apply the "Button" font to buttons */
+    font-family: "Button", sans-serif;
+  }
+  .bg-primary {
+    background-color: #0190cd;
+  }

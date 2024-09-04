@@ -1,23 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ព័ត៌មាន</title>
+    <link rel="stylesheet" href="../css/news.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.html" />
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <section>
+        <!-- Navbar -->
+        <nav
+          class="relative flex items-center justify-between sm:h-10 py-6 px-4 bg-sky-600 sticky top-0"
+        >
+          <div class="container mx-auto flex items-center justify-between">
+            <!-- Logo Section -->
+            <div class="flex items-center">
+              <a href="../index.html" aria-label="Home">
+                <img src="../image/logo.png" class="max-h-10 max-w-full" />
+              </a>
+            </div>
+            <!-- Navigation Links -->
+            <div class="flex-1 flex justify-center">
+              <div class="flex space-x-[70px]">
+                <a
+                  href="../html/hospital.html"
+                  class="koh-santepheap-regular text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white​​"
+                  >មន្ទីរពេទ្យ</a
+                >
+                <a
+                  href="../html/news.html"
+                  class="koh-santepheap-regular text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white"
+                  >ព័ត៌មាន</a
+                >
+                <a
+                  href="../html/contactus.html"
+                  class="koh-santepheap-regular text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white"
+                  >ទំនាក់ទំនង</a
+                >
+                <a
+                  href="../html/aboutus.html"
+                  target="_blank"
+                  class="koh-santepheap-regular text-gray-50 transition duration-150 ease-in-out border-b-2 border-transparent hover:border-white focus:border-white"
+                  >អំពីយើង</a
+                >
+              </div>
+            </div>
+            <!-- Button Section -->
+            <div class="flex items-center space-x-2">
+              <a
+                href="/signup"
+                class="koh-santepheap-thin inline-flex items-center px-6 py-1 border border-black text-black leading-6 font-medium rounded-md text-black bg-gray-50 hover:bg-gray-200 focus:outline-none focus:border-blue-700 transition duration-150 ease-in-out width-150"
+              >
+                បង្កើតគណនី
+              </a>
+              <a
+                href="/signin"
+                class="koh-santepheap-thin inline-flex items-center px-6 py-1 border border-black text-black leading-6 font-medium rounded-md text-black bg-gray-50 hover:bg-gray-200 focus:outline-none focus:border-blue-700 transition duration-150 ease-in-out width-150"
+              >
+                ចូលគណនី
+              </a>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section>
+        <!-- Cover -->
+        <div
+          class="relative min-h-screen flex flex-col items-start justify-center px-4"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.7)
+              ),
+              url('../image/phnompenhguide1.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+          "
+        >
+          <div class="background-overlay"></div>
+          <div class="text-overlay">
+            <h2 class="text-4xl md:text-5xl text-white font-bold mb-4">
+              "ព័ត៌មានថ្មីៗពីមន្ទីរពេទ្យ
+            </h2>
+            <h2 class="text-3xl md:text-4xl text-red-500 font-bold mb-4">
+              សេចក្ដីលម្អិត និងការអាប់ដេតទាន់ពេល"
+            </h2>
+            <p class="text-white text-lg md:text-xl">
+              គេហទំព័រនេះត្រូវបានបង្កើតឡើងដើម្បីជាកន្លែងមួយសម្រាប់ទទួលព័ត៌មានសំខាន់ៗអំពីសេវាកម្មមន្ទីរពេទ្យនៅទូទាំងប្រទេស។ អ្នកប្រើប្រាស់អាចទទួលបានព័ត៌មានចុងក្រោយអំពីសេវាកម្ម
+              និងសកម្មភាពផ្សេងៗដែលមន្ទីរពេទ្យនីមួយៗបានផ្តល់ជូន។ ការរៀបចំទំនាក់ទំនងត្រូវបានធ្វើឡើងយ៉ាងប្រក្រតី
+              ដោយធានាថា
+              អ្នកប្រើប្រាស់អាចទាក់ទងទៅមន្ទីរពេទ្យបានយ៉ាងងាយស្រួល។ វិធានការទាំងអស់ដែលត្រូវបានអនុវត្តនៅមន្ទីរពេទ្យ
+              ត្រូវបានបង្ហាញនៅលើគេហទំព័រ ដើម្បីផ្តល់នូវភាពជឿជាក់
+              និងសុវត្ថិភាព។ និងក៏មានព័ត៌មានលម្អិតអំពីការផ្លាស់ប្តូរឬអ្វីៗដែលត្រូវបានធ្វើថ្មីៗនៅក្នុងមន្ទីរពេទ្យផ្សេងៗ។
+            </p>
+            <div class="flex items-center space-x-2">
+              <a
+                href="/signup"
+                class="koh-santepheap-thin inline-flex items-center px-6 py-1 border border-black text-black leading-6 font-medium rounded-md text-black bg-gray-50 hover:bg-gray-200 focus:outline-none focus:border-blue-700 transition duration-150 ease-in-out width-150"
+              >
+                បង្កើតគណនី
+              </a>
+          </div>
+        </div>
+      </section>
+      <!-- Hot News Section -->
+      <section class="p-8">
+        <h2
+          class="text-2xl font-bold mb-4 mt-10 text-center"
+          style="font-family: Tiatle"
+        >
+          ព័ត៌មានមន្ទីរពេទ្យរដ្ឋ
+        </h2>
+
+        <h3 class="text-xl font-bold mb-4">ព័ត៌មានក្តៅៗ</h3>
+        <div class="mb-8">
+          <div class="flex">
+            <img
+              src="../image/CPM_Calemet_23-5-23.jpg"
+              alt="Main News"
+              class="w-1/2 h-auto object-cover rounded-lg"
+            />
+            <div class="ml-4 w-1/2">
+              <p class="text-lg">
+                ​អគារពហុបំណងមានឈ្មោះថាអគារតេជោអភិវឌ្ឍន៍នៃមន្ទីរពេទ្យកាល់ម៉ែតត្រូវបានសម្ពោធដាក់ឱ្យប្រើប្រាស់ជាផ្លូវការហើយក្រោមអធិបតីភាពសម្តេចតេជោនាយករដ្ឋមន្ត្រី
+                ហ៊ុន សែន។ បើតាមឯកឧត្តមសាស្រ្តាចារ្យ ម៉ម
+                ប៊ុនហេងរដ្ឋមន្ត្រីក្រសួងសុខាភិបាលបានថ្លែងក្នុងពិធីសម្ពោធនៅថ្ងៃទី២៣ខែឧសភាឆ្នាំ២០២៣ថាគម្រោងសាងសង់អគារទាំងមូលនិងបំពាក់ឧបករណ៍សម្ភារៈមានតម្លៃជាទឹកប្រាក់សរុប៧០.៣៣១.៨១១,១១ដុល្លារដែលជាការឧបត្ថម្ភពីសម្តេចតេជោនិងសម្ដេចកិត្តិព្រឹទ្ធបណ្ឌិតនិងរាជរដ្ឋាភិបាលកម្ពុជាព្រមទាំងសប្បុរសជននានា
+                នៅមន្ទីរពេទ្យកាល់ម៉ែត កាលពីថ្ងៃទី២៤ ខែវិច្ឆិកា ឆ្នាំ២០១៩
+                ក្រោមពាក្យស្លោក «បរិច្ចាគដើម្បីជីវិតមនុស្ស»។
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- News Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <!-- News Item 1 -->
+          <div class="border rounded-lg overflow-hidden">
+            <img
+              src="../image/492.jpg"
+              alt="News 1"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-4">
+              <p style="font-family: caption">
+                មន្ទីរពេទ្យរដ្ឋទាំងអស់ ត្រូវទទួលពិនិត្យអ្នកជំងឺទូទៅ
+                តែធ្វើតេស្ដរហ័សរកកូវីដជាមុនបើសិនចាំបាច់
+              </p>
+              <p class="text-gray-600 text-sm">១ម៉ោងមុន</p>
+            </div>
+          </div>
+          <!-- News Item 2 -->
+          <div class="border rounded-lg overflow-hidden">
+            <img
+              src="../image/bongoek.jpeg"
+              alt="News 2"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-4">
+              <p style="font-family: caption">
+                មកដឹងពីមន្ទីរពេទ្យរដ្ឋ មន្ទីរពេទ្យបង្អែក
+                និងមន្ទីរពេទ្យឯកជននៅភ្នំពេញចំនួនប៉ុន្មាន
+                ដើម្បីពង្រឹងលើវិស័យសុខាភិបាល
+              </p>
+              <p class="text-gray-600 text-sm">២៣/មេសា/២០២៤</p>
+            </div>
+          </div>
+          <!-- News Item 3 -->
+          <div class="border rounded-lg overflow-hidden">
+            <img
+              src="../image/20141008_01.jpg"
+              alt="News 3"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-4">
+              <p style="font-family: caption">
+                អគារ​សម្ភព​ថ្មី​ក្នុង​មន្ទីរ​ពេទ្យ​គន្ធ​បុប្ផា​នៅ​ខេត្ត​សៀម​រាប​
+                ដាក់ឱ្យ​ដំណើរ​ការ​ជា​ផ្លូវ​ការ​ ​
+              </p>
+              <p class="text-gray-600 text-sm">២៣/មេសា/២០២៤</p>
+            </div>
+          </div>
+          <!-- News Item 4 -->
+          <div class="border rounded-lg overflow-hidden">
+            <img
+              src="../image/152867927_2951077538458861_5583386914311374870_n.webp"
+              alt="News 4"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-4">
+              <p style="font-family: caption">
+                ក្រសួងសុខាភិបាល​កម្ពុជា​កាលពី​ថ្ងៃទី០៤​ ខែសីហា ​ម្សិលមិញ
+                ​បានប្រាប់​ទៅមន្ទីរពេទ្យរដ្ឋ​ និងសេវា​សុខាភិបាល​ឯកជន​ទាំងអស់​
+                ត្រូវតែទទួលយក​អ្នកជំងឺ​ទាំងអស់​ទៅធ្វើការ​ព្យាបាល​ជាដាច់ខាត​។​
+              </p>
+              <p class="text-gray-600 text-sm">០៩/មេសា/២០២៤</p>
+            </div>
+          </div>
+          <!-- News Item 5 -->
+          <div class="border rounded-lg overflow-hidden">
+            <img
+              src="../image/B9A6A173-7EC1-4687-B3C8-AFAA41975371.jpeg"
+              alt="News 5"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-4">
+              <p style="font-family: caption">
+                ភ្នំពេញ៖ គ្រប់សមាជិក ដែលមានប័ណ្ណ ប.ស.ស. ទាំងអស់ គឺមានសិទ្ធិ
+                ទៅប្រើប្រាស់សេវាពិនិត្យ និងព្យាបាលជំងឺ នៅគ្រប់មន្ទីរពេទ្យរដ្ឋ
+                និងមន្ទីរពេទ្យឯកជន ដែលជាដៃគូ ប.ស.ស. ដោយឥតគិតថ្លៃ។
+              </p>
+              <p class="text-gray-600 text-sm">០២/មេសា/២០២៤</p>
+            </div>
+          </div>
+          <!-- News Item 6 -->
+          <div class="border rounded-lg overflow-hidden">
+            <img
+              src="../image/Banner-Leng-Navatra-14-10-1024x576.png"
+              alt="News 6"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-4">
+              <p style="font-family: caption">
+                សូមចូលរួមទាំងអស់គ្នា បរិច្ចាគជូនមូលនិធិគន្ធបុប្ផាកម្ពុជា
+                ក្នុងយុទ្ធនាការ ១ម៉ឺនរៀល ១ម៉ឺននាក់
+              </p>
+              <p class="text-gray-600 text-sm">១២/មេសា/២០២៤</p>
+            </div>
+          </div>
+          <!-- News Item 7 -->
+          <div class="border rounded-lg overflow-hidden">
+            <img
+              src="../image/sbm-2RyplhPETFLs2rLeXeiKU.jpg"
+              alt="News 7"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-4">
+              <p style="font-family: caption">
+                ប្រមុខរដ្ឋាភិបាលថា មន្ទីរពេទ្យតេជោសែនកោះធំ
+                ទំនើបហើយពលរដ្ឋ៦០ម៉ឺននាក់នៃខេត្តចំនួនពីរនឹងទទួលបានការព្យាបាលប្រកបដោយគុណភាព
+              </p>
+              <p class="text-gray-600 text-sm">២៣/មេសា/២០២៤</p>
+            </div>
+          </div>
+          <!-- News Item 8 -->
+          <div class="border rounded-lg overflow-hidden">
+            <img
+              src="../image/CPM_10_Hospitals_4-10-2022.jpg"
+              alt="News 8"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-4">
+              <p style="font-family: caption">
+                គម្រោងសង់មន្ទីពេទ្យអន្តរជាតិធំៗ២ តម្លៃ ៤១លានដុល្លារ
+                ទទួលបានភ្លើងខៀវពីរដ្ឋហើយ
+              </p>
+              <p class="text-gray-600 text-sm">០៩/មីនា/២០២៤</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hot News Section -->
+      <section class="p-8">
+        <h2
+          class="text-2xl font-bold mb-4 mt-10 text-center"
+          style="font-family: Tiatle"
+        >
+          ព័ត៌មានមន្ទីរពេទ្យឯកជន
+        </h2>
+
+        <h3 class="text-xl font-bold mb-4">ព័ត៌មានក្តៅៗ</h3>
+        <div class="mb-8">
+          <div class="flex">
+            <img
+              src="../image/d3f6200b-6c4e-4348-bb3f-bd13b61f47bf.jpg"
+              alt="Main News"
+              class="w-1/2 h-auto object-cover rounded-lg"
+            />
+            <div class="ml-4 w-1/2">
+              <p class="text-lg">
+                ភ្នំពេញ — 
+                ក្រសួង​សុខាភិបាល​សម្រេច​បិទ​មន្ទីរ​សម្រាក​ព្យាបាល​ឯកជន​ចំនួន​ពីរ​កន្លែង​ក្នុង​រាជធានី​ភ្នំពេញ
+                ក្រោម​មូលហេតុ​ថា
+                ​មន្ទីរ​សម្រាក​ព្យាបាល​ទាំង​ពីរ​មិន​បាន​គោរព​តាម​ការ​ណែនាំ​របស់​ក្រសួង។
+                សេចក្តី​សម្រេច​របស់​ក្រសួង​សុខាភិបាល​ចំនួន​ពីរដែល​ចេញ​ផ្សាយ​កាល​ពី​ថ្ងៃទី​១៧
+                ខែ​តុលា ឆ្នាំ​២០២៣ ​ឲ្យ​ដឹង​ថា​
+                ក្រសួង​បាន​បិទ​មន្ទីរ​សម្រាក​ព្យាបាល​ឯកជន​ឈ្មោះ ​សែនមានជ័យ​
+                ដែល​មាន​ទីតាំង​នៅ​ផ្ទះ​លេខ​ ៧B3- ៨B3 ​ផ្លូវ​លេខ​ ១០៧
+                ​សង្កាត់​កាកាប​ទី ២ ​ខណ្ឌ​ពោធិ៍​សែនជ័យ ​រាជធានី​ភ្នំពេញ
+                ​និង​មន្ទីរ​ពហុព្យាបាល​ឯកជន​មួយ​ទៀត​មាន​ឈ្មោះ ​មេត្រូ
+                អអ៊ិលវី ​ដែល​មាន​ទីតាំង​នៅ​ផ្ទះ​លេខ​ ៦៨ ​ផ្លូវ​លេខ​ ២៧១
+                ​សង្កាត់​អូរបែក​ក្អម ​ខណ្ឌ​សែនសុខ ​រាជធានី​ភ្នំពេញ។
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- News Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <!-- News Item 1 -->
+          <div class="border rounded-lg overflow-hidden">
+            <img
+              src="../image/492.jpg"
+              alt="News 1"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-4">
+              <p style="font-family: caption">
+                សេវា​មន្ទីរពេទ្យ​ឯកជន​ចំនួន ២៣ ត្រូវ​បាន​ក្រសួង​សុខាភិបាល
+                អនុញ្ញាត​ឱ្យ​ធ្វើ​តេស្ត​រហ័ស និង​ព្យាបាល​អ្នក​ជំងឺ​កូវីដ
+              </p>
+              <p class="text-gray-600 text-sm">១ម៉ោងមុន</p>
+            </div>
+          </div>
+          <!-- News Item 2 -->
+          <div class="border rounded-lg overflow-hidden">
+            <img
+              src="../image/1-8.jpg"
+              alt="News 2"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-4">
+              <p style="font-family: caption">
+                រដ្ឋមន្រ្តីក្រសួងព័ត៌មាន ជំរុញឱ្យមន្ទីរព័ត៌មានខេត្តកំពត
+                បន្តខិតខំប្រឹងប្រែងផ្សព្វផ្សាយឱ្យបានទូលំទូលាយ
+              </p>
+              <p class="text-gray-600 text-sm">២៣/មេសា/២០២៤</p>
+            </div>
+          </div>
+          <!-- News Item 3 -->
+          <div class="border rounded-lg overflow-hidden">
+            <img
+              src="../image/០៤០៥.jpeg"
+              alt="News 3"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-4">
+              <p style="font-family: caption">
+                ឯកឧត្តមសាស្រ្តាចារ្យឈាងរ៉ារដ្ឋមន្ត្រីក្រសួងសុខាភិបាលបានដឹកនាំកិច្ចប្រជុំក្រុមការងារវិស័យឯកជនផ្នែកសុខាភិបាល(ក្រុម«ឋ»)នៃវេទិការាជរដ្ឋាភិបាល-ផ្នែកឯកជន
+              </p>
+              <p class="text-gray-600 text-sm">២៣/មេសា/២០២៤</p>
+            </div>
+          </div>
+          <!-- News Item 4 -->
+          <div class="border rounded-lg overflow-hidden">
+            <img
+              src="../image/c21e4f60d7b2c2b369cb78daf55c285f.jpg"
+              alt="News 4"
+              class="w-full h-32 object-cover"
+            />
+            <div class="p-4">
+              <p style="font-family: caption">
+                ការចុះពិនិត្យការផ្ដល់សេវានៅតាមមូលដ្ឋានសុខាភិបាលឯកជនក្នុងខេត្តកណ្ដាល
+              </p>
+              <p class="text-gray-600 text-sm">០៩/មេសា/២០២៤</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- Thank -->
+        <h2
+          class="text-2xl font-bold mb-4 mt-10 text-center"
+          style="font-family: Tiatle"
+        >
+          សូមអរគុណសម្រាប់ការប្រើប្រាស់!
+        </h2>
+        <p class="text-center" style="font-family: caption">
+          យើងរីករាយដែលអ្នកបានជ្រើសរើសប្រើប្រាស់គេហទំព័ររបស់យើង។ ការគាំទ្រ
+          និងការជឿទុកចិត្តរបស់អ្នកមានន័យថាពិភពលោកសម្រាប់ពួកយើង។
+          ប្រសិនបើអ្នកមានមតិកែលម្អ សំណួរ ឬការផ្ដល់យោបល់ណាមួយ
+          សូមកុំស្ទាក់ស្ទើរក្នុងការទាក់ទង។
+          យើងតែងតែនៅទីនេះដើម្បីបង្កើនបទពិសោធន៍របស់អ្នក!
+        </p>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
