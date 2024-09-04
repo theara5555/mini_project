@@ -85,3 +85,23 @@ a { /* Apply the "Button" font to buttons */
   padding-left: 1rem;
   padding-right: 1rem;
 }
+@media (max-width: 768px) {
+  .text-overlay h3 {
+    font-size: 2rem; /* Adjust heading size on smaller screens */
+  }
+
+  .text-overlay p {
+    font-size: 1rem; /* Adjust paragraph size on smaller screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .text-overlay h3 {
+    font-size: 3rem; /* Adjust heading size on medium screens */
+  }
+
+  .text-overlay p {
+    font-size: 1.25rem; /* Adjust paragraph size on medium screens */
+  }
+}
+
